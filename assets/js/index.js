@@ -17,10 +17,10 @@ class ArrIterator {
          done: true,
        };
      }
-    
+
     return {value: this._arr[this._start++],
             done: false,
-  } 
+  }
  }
 
   printArr () {
@@ -113,20 +113,19 @@ const stud1 = new Stud("Vasia", "Ivanov", 2020);
 //task3 вывести элементы массива после первого нуля
 const arr2 = [1,7,-9,5,-3,0,2,1,-4,0,4,77];
 console.log(arr2.slice(arr2.indexOf(0)+1));
-*/
+*/ /*
 //task4 [1,2,3,[4,5,[6,7,8,9],10,11,12],13,14,15]
 //добыть 5, 8
 //добыть [6,7,8,9]
-//добыть все кроме 1,2,3  
-const arr = [1,2,3,[4,5,[6,7,8,9],10,11,12],13,14,15];
-const [,,,[,five,[,,eight]]] = arr;
+//добыть все кроме 1,2,3
+const arr = [1, 2, 3, [4, 5, [6, 7, 8, 9], 10, 11, 12], 13, 14, 15];
+const [, , , [, five, [, , eight]]] = arr;
 console.log(five, eight);
-const [,,,[,,[...arr2]]] = arr;
-console.log (arr2);
-console.log('******');
-const [,,,...arr3] = arr;
-console.log ('arr3 ', arr3);
-const [[,,...arr4],...arr5] = arr3;
-console.log ('arr4 ',arr4, 'arr5 ',arr5);
-const [,,,...[four, five2,[arr22],...arr33],...arr44] = arr;
-console.log(four,five2,...arr22,...arr33,...arr44);
+const [, , , [, , [...arr2]]] = arr;
+console.log(arr2);
+console.log("******");
+const [, , , ...arr3] = arr;
+const [[four, five2, ...arr4], ...arr5] = arr3;
+const [arr6, ...arr7] = arr4;
+console.log(four, five2, ...arr6, ...arr7, ...arr5);
+*/
